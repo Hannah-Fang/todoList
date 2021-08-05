@@ -1,0 +1,588 @@
+* {
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+a,
+i {
+    color: #000;
+}
+
+header {
+    background: #000;
+    padding: 0 50px;
+}
+
+i.fas {
+    color: #fff;
+}
+
+.navbar-nav li a {
+    font-size: 0.8rem;
+}
+
+.navbar-nav li {
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.navbar-nav li:hover {
+    border-bottom: 2px solid #ffce3b;
+    transition: all .3s;
+}
+
+.header-btn a {
+    margin-right: 50px;
+}
+
+.header-btn a i {
+    font-size: 30px;
+}
+
+.header-btn .member,
+.header-btn .cart {
+    height: 30px;
+    width: 30px;
+}
+
+.header-btn .member {
+    background: url(./images/popmart-logo-black_medium.png) center top no-repeat;
+    background-size: cover;
+}
+
+.header-btn .cart {
+    background: url(./images/icon-cart-white_medium.png) center top no-repeat;
+    background-size: cover;
+}
+
+
+/* carousel */
+
+.carousel-indicators li {
+    width: 300px;
+    height: 4px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.carousel-indicators .active {
+    background-color: #ffce3b;
+}
+
+
+/* arrival */
+
+.arrival {
+    margin-top: 100px;
+}
+
+.arrival h2 {
+    font-size: 2.5rem;
+}
+
+.card-img {
+    position: relative;
+    min-width: 225px;
+    min-height: 225px;
+    margin: auto;
+    background: url(./images/item_01.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.card-btn {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    /* left: 0;
+    right: 0;
+    margin: auto; */
+}
+
+.card-btn .buy-btn {
+    color: #ffce3b;
+    background-color: #fff;
+    width: 150px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .card-btn {
+        display: block;
+        position: static;
+    }
+    .card-btn .buy-btn {
+        color: #ffce3b;
+        background-color: #000;
+        width: 150px;
+        border-radius: 15px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+}
+
+.card:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_01-2.jpg) no-repeat center top;
+    background-size: cover;
+    border-radius: 0;
+    transition: all 1s;
+}
+
+.card:hover .card-btn {
+    display: inline;
+    transition: all 1s;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.view-all {
+    margin: 0 auto;
+    padding: 5px 20px;
+    width: fit-content;
+}
+
+.view-all-btn {
+    color: #aaa;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+.view-all:hover {
+    background-color: rgba(204, 204, 204, 0.5);
+    border-bottom: 2px solid #ffce3b;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+.view-all:hover .view-all-btn {
+    color: #000;
+}
+
+.arrival .card02 .card-img {
+    background: url(./images/item_02.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card02:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_02-2.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card03 .card-img {
+    background: url(./images/item_03.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card03:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_03-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card04 .card-img {
+    background: url(./images/item_04.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card04:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_04-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card05 .card-img {
+    background: url(./images/item_05.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card05:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_05-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card06 .card-img {
+    background: url(./images/item_06.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card06:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_06-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card07 .card-img {
+    background: url(./images/item_07.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card07:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_07-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card08 .card-img {
+    background: url(./images/item_08.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.arrival .card08:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/item_08-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+
+/* hot */
+
+.hot {
+    margin-top: 100px;
+}
+
+.hot .card01 .card-img {
+    background: url(./images/hot_01.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card01:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_01-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card02 .card-img {
+    background: url(./images/hot_02.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card02:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_02-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card03 .card-img {
+    background: url(./images/hot_03.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card03:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_03-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card04 .card-img {
+    background: url(./images/hot_04.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card04:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_04-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card05 .card-img {
+    background: url(./images/hot_05.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card05:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_05-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card06 .card-img {
+    background: url(./images/hot_06.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card06:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_06-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card07 .card-img {
+    background: url(./images/hot_07.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card07:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_07-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card08 .card-img {
+    background: url(./images/hot_08.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.hot .card08:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hot_08-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+
+/* artist */
+
+.artist {
+    margin-top: 100px;
+}
+
+.artist .card01 .card-img {
+    background: url(./images/artist_01.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card01:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/artist01-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card02 .card-img {
+    background: url(./images/artist_02.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card02:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/artist02-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card03 .card-img {
+    background: url(./images/artist_03.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card03:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/artist03-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card04 .card-img {
+    background: url(./images/artist_04.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.artist .card04:hover .card-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/artist04-2.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+
+/* about */
+
+.jumbotron {
+    background: url(./images/about.png) no-repeat center top;
+    background-size: cover;
+    padding: 150px 0;
+    max-height: 1200px;
+    color: #fff;
+}
+
+.jumbotron .about-title .jumbotron .about-title h2 {
+    font-weight: 700;
+}
+
+.jumbotron .about-title a i {
+    font-size: 4rem;
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .jumbotron {
+        padding: 100px 20px;
+        max-height: 500px;
+        background-size: cover;
+    }
+}
+
+
+/* IP & designer */
+
+.designer {
+    margin-top: 100px;
+}
+
+.container-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.designer-card .designer-name {
+    background: url('./images/molly_200x200.png') center center no-repeat;
+    background-size: 90%;
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: all .2s;
+}
+
+.designer-card:hover .designer-name {
+    border: 3px solid #ffce3b50;
+    transform: scale(1.15);
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.designer-card .designer-name p {
+    margin: 0;
+}
+
+.designer02 .designer-name {
+    background: url('./images/dimoo_200x200.png') center center no-repeat;
+    background-size: 90%;
+}
+
+.designer03 .designer-name {
+    background: url('./images/labubu_200x200.png') center center no-repeat;
+    background-size: 90%;
+}
+
+.designer04 .designer-name {
+    background: url('./images/pucky_200x200.png') center center no-repeat;
+    background-size: 90%;
+}
+
+.designer05 .designer-name {
+    background: url('./images/STYR RORY_200x200.png') center center no-repeat;
+    background-size: 90%;
+}
+
+.designer06 .designer-name {
+    background: url('./images/bobococo_200x200.png') center center no-repeat;
+    background-size: 90%;
+}
+
+
+/* footer */
+
+footer {
+    background: #000;
+    padding: 50px;
+}
+
+footer .email h5 {
+    color: #ffce3b;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+footer .email p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+footer .email input {
+    width: 280px;
+    padding: 20px;
+    margin: 0 10px 0 5px;
+    background-color: rgba(67, 67, 67, 1);
+    border: none;
+}
+
+@media (max-width: 575.98px) {
+    footer .email input {
+        max-width: 200px;
+    }
+}
+
+footer .email input::placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+footer .email button {
+    background-color: rgba(35, 35, 35, 1);
+    border: none;
+    color: #ffce3b;
+    display: inline-block;
+    padding: 20px 20px;
+    font-weight: 500;
+}
+
+.footer-nav h5 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .9rem;
+}
+
+.social-media a i {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 5px 30px;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .9rem;
+    margin: 0;
+}
+
+
+/* fixed */
+
+.rewards {
+    width: 150px;
+    background-color: #ec3737;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.rewards p {
+    letter-spacing: 0px;
+    color: #fff;
+    margin: 0;
+    line-height: 30px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.back-to-top {
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 10%;
+}
+
+.back-to-top i {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: center;
+}

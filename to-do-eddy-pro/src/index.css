@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  min-height: 300px;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px lightblue;
+  background-color: #2f3b47;
+}
+
+.todoH1 {
+  font-family: 'Merriweather', serif;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.inputAreaAdd {
+  display: flex;
+  width: 100%;
+}
+
+.addinput {
+  width: 95%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 1rem;
+  outline: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.btnAdd {
+  margin: auto;
+  background-color: #4ca387;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.todoItem {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #344453;
+  color: white;
+  font-weight: 00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todoItem-left {
+  display: flex;
+}
+
+.todoItem-left input[type='checkbox'] {
+  margin: auto;
+  margin-right: 15px;
+}
+
+.todoItemText {
+  line-height: 50px;
+  /* border:1px red solid; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.todoItem-right {
+  align-items: center;
+}
+.btnDelete {
+  margin-top: 7px;
+}
+
+.btnDelete {
+  color: #aaa;
+}
+
+.todoItemDel {
+  color: #aaa;
+}
